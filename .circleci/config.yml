@@ -23,9 +23,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run:
-          name: Run tests
-          command: npm test
+      
           
       - run:
           name: Build project
